@@ -1,0 +1,135 @@
+/* UNIVERSAL */
+body {
+  margin: 0;
+  background-color: #f9b5ac;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+form {
+  input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 16px;
+    color: #555;
+  }
+
+  textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: vertical; /* Allows vertical resizing */
+    min-height: 50px; /* Minimum height of the textarea */
+  }
+
+  select {
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 16px;
+    color: #555;
+  }
+}
+
+/* NAVBAR */
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem;
+  background-color: #9dbf9e;
+
+  a {
+    margin-right: 1rem;
+    /* color: #ee7674; */
+  }
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  background-color: #ee7674;
+}
+
+/* HOME PAGE */
+.home-container {
+  padding: 1rem;
+}
+.home-post-cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.post-user-name {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.home-post-card {
+  background-color: #987284;
+  padding: 0.3rem;
+}
+
+.add-post-form {
+  display: grid;
+  width: 50%;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: start;
+  row-gap: 1rem;
+
+  button {
+    width: 10rem;
+    padding: 0.5rem;
+  }
+}
+
+/* USER LIST PAGE */
+.user-posts-container {
+  min-height: 40rem;
+  list-style: none;
+  padding: 1rem;
+  li {
+    margin: 1rem;
+  }
+}
+.list-user-name {
+  text-transform: uppercase;
+}
+
+/* USER POSTS PAGE */
+.user-post-card {
+  background-color: #987284;
+  border: 1px solid gray;
+  padding: 0.3rem;
+  margin-bottom: 0.5rem;
+
+  button {
+    padding: 0.3rem 2rem;
+    margin-right: 0.2rem;
+  }
+}
+
+/* EDIT PAGE */
+.edit-post-container {
+  padding: 1rem;
+  min-height: 45rem;
+}
+
+.edit-form {
+  display: grid;
+  width: 50%;
+  row-gap: 1rem;
+
+  button {
+    width: 20rem;
+  }
+}
